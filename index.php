@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Whatdahealth</title>
-    <meta name="title" content="Best What da Health">
-    <meta name="description" content="">
+    <meta name="title" content="สุขภาพที่ดีทำง่ายสร้างได้ด้วยตัวคุณเอง">
+    <meta name="description" content="แหล่งรวบรวมวิธีดูแลสุขภาพ พร้อมทั้งโปรแกรมคำนวณดัชนีมวลกาย(BMI) การเผาผลาญพลังงาน(BMR) และคู่มือการออกกำลังกายอย่างถูกต้อง">
     <meta name="keywords" content="">
     <link rel="shortcut icon" type="image/x-icon" href="img/icon.png"/>
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
