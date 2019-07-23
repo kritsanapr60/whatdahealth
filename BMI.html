@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Product  </title>
+
     <meta name="title" content="Best What da Health">
     <meta name="description" content="">
     <meta name="keywords" content="">
+    
     <link rel="shortcut icon" type="image/x-icon" href="img/icon.png"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -110,10 +112,19 @@
       <li>
         <div id="mySidenav" class="sidenav">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="text-aling:center;">Menu &nbsp; &times; </a>
-          <a href="index.php"><i class="fa fa-home" aria-hidden="true"></i>&nbsp; Home</a>
-          <a href="product.php"><i class="fab fa-product-hunt"></i>&nbsp; Product</a>
-          <a href="content.php"><i class="fas fa-id-card-alt"></i>&nbsp; Content</a>
-          <a href="links.php"><i class="fas fa-link"></i>&nbsp; Links</a>
+          <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>&nbsp; Home</a>
+          <a href="product.html"><i class="fab fa-product-hunt"></i>&nbsp; Product</a>
+          <a href="content.html"><i class="fas fa-id-card-alt"></i>&nbsp; Content</a>
+          <a href="links.html"><i class="fas fa-link"></i>&nbsp; Links</a>
+          <center><div class="dropdown ">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Calculator
+            </button>
+            <div class="dropdown-menu">
+              <a  href="BMI.html" style="font-size: 15px; width: 5px;"> BMI <i class="fa fa-line-chart" aria-hidden="true"></i></a>
+              <a  href="BMR.html" style="font-size: 15px; width: 5px;"> BMR <i class="fa fa-line-chart" aria-hidden="true"></i></a>
+            </div>
+          </div>
         </div>
       </li>
     </ul>
@@ -126,6 +137,7 @@
     </form> -->
   </div>
 </nav>
+
 <!-- Carousel -->
 <div id="demo" class="carousel slide" data-ride="carousel">
   <ul class="carousel-indicators">
@@ -164,15 +176,29 @@
   </a>
 </div>
 
-
 <!-- Stop navbar -->
 <br>
 <div class="col-md-12">
-  <div class="alert alert-success center">
-      <h1>Product</h1>
-      <h5><b>สุขภาพที่ดีเริ่มได้ที่ตัวคุณ</b></h5>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;อาหารแทบจะทุกชนิดจะมีน้ำตาลตามธรรมชาติอยู่แล้ว เพื่อให้เราได้รับน้ำตาลในปริมาณที่พอเหมาะ จึงควรควบคุมปริมาณน้ำตาลที่เติมเพิ่มในอาหาร และเครื่องดื่ม และเลือกกินอาหารที่มีน้ำตาลที่พอเหมาะ และหมั่นออกกำลังกายอยู่เสมอ</p>
-  </div>
+    <div class="alert alert-success center">
+        <h1> คำนวณค่า BMI </h1>
+        <h2>ค่าดัชนีมวลกาย Body Mass Index </h2>
+    </div>
+    <form action="/action_page.html">
+        น้ำหนัก: <input type="text" name="weight"><br>
+        ส่วนสูง: <input type="text" name="height"><br>
+        <input type="submit" value="Submit">
+    </form>
+        
+    <div class="alert alert-success center">
+        <h1 name= "showBMI"> BMIของคุณ = ... </h1>
+        <p>
+        18.5 – 22.99 : ปกติ <br>
+        23.0 – 24.99 : น้ำหนักเกิน<br>
+        25.0 – 29.99 : อ้วน ระดับ 1 <br>
+        30.0 – 34.99 : อ้วน ระดับ 2 <br>
+        > 35.0 : Morbid obesity อ้วน ระดับ 3, อ้วนขั้นรุนแรง
+        </p>
+    </div>
 </div>
    
 
