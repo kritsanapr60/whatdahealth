@@ -93,15 +93,17 @@
                             <form>
                                 <div class="form-group ">
                                     <label for="exampleInputEmail1">Weight (kg.)</label>
-                                    <input type="number" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your weight">
+                                    <input type="number" class="form-control form-control-lg" id="weight" aria-describedby="emailHelp" placeholder="Enter your weight">
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputPassword1">Height (cm.)</label>
-                                    <input type="number" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Enter your height">
+                                    <input type="number" class="form-control form-control-lg" id="height" placeholder="Enter your height">
                                 </div>
+
+                                <button onclick="myFunction()">Calculate</button>
+                                <input type="text" id="output" value="Mickey">
                             </form>
                         </div>
-                        <a href="#services" class="btn btn-custom btn-lg page-scroll">Calculate</a> </div>
                     </div>
                 </div>
                 <br>
@@ -154,6 +156,28 @@
             </div>
         </div>
     </div>
+        <script>
+            function myFunction() {
+                var weight = document.getElementById("weight").value ;
+                var height = document.getElementById("height").value ;
+                var re = weight/(height/100)**2 ;
+                var bmi = "";
+                if (re<18.5){
+                    var bmi = "น้ำหนักต่ำกว่าเกณฑ์" ;
+                } else if( re <= 22.9){
+                    var bmi = "สมส่วน" ;
+                } else if( re <= 24.9){
+                    var bmi = "น้ำหนักเกิน";
+                } else if(re <= 29.9){
+                    var bmi = "โรคอ้วน" ;
+                } else{
+                    var bmi ="โรคอ้วนอัตราย" ;
+                }
+                document.getElementById("output").value = bmi;
+                
+            }
+        </script>
+
         <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
         <script type="text/javascript" src="js/bootstrap.js"></script>
         <script type="text/javascript" src="js/SmoothScroll.js"></script>
@@ -164,5 +188,4 @@
         <script type="text/javascript" src="js/contact_me.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
 </body>
-
 </html>
