@@ -18,6 +18,9 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+    
+    
+    
 
     <!-- Slider
     ================================================== -->
@@ -84,27 +87,65 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-md-12">
-                    <div class="about-text">
+                    <center><div class="about-text">
                         <h2>Body Mass Index <span>(BMI)</span></h2>
                         <hr>
                         <!-- <h3>สุขภาพดีเริ่มได้ที่ตัวคุณ</h3> -->
                         <br>
+                        
                         <div class="col-md-12">
                             <form>
                                 <div class="form-group ">
-                                    <label for="exampleInputEmail1">Weight (kg.)</label>
-                                    <input type="number" class="form-control form-control-lg" id="weight" aria-describedby="emailHelp" placeholder="Enter your weight">
+                                    <label >Weight (kg.)</label>
+                                    <input type="number" class="form-control" id="weight" aria-describedby="emailHelp" placeholder="Enter your weight">
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputPassword1">Height (cm.)</label>
                                     <input type="number" class="form-control form-control-lg" id="height" placeholder="Enter your height">
                                 </div>
 
-                                <button onclick="myFunction()">Calculate</button>
-                                <input type="text" id="output" value="Mickey">
-                            </form>
+                                <button onclick="myFunction()" class="btn btn-lg">Calculate</button><br><br>
+                                <input type="text" id="output">
+                            </form><br>
                         </div>
                     </div>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>ค่า BMI</th>
+                            <th>น้ำหนัก</th>
+                            <th>ภาวะเสี่ยงต่อโรค</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>น้ำหนัก(น้อยกว่า) 18.50</td>
+                            <td>น้ำหนักต่ำกว่าเกณฑ์ / ผอม</td>
+                            <td>มากกว่าคนปกติ</td>
+                          </tr>
+                          <tr>
+                            <td>น้ำหนัก 18.6 - 22.9</td>
+                            <td>น้ำหนักปกติ</td>
+                            <td>ปกติ</td>
+                          </tr>
+                          <tr>
+                            <td>น้ำหนักช(มากกว่า)23.0 - 24.9</td>
+                            <td>น้ำหนักมากกว่าเกณฑ์ / เริ่มท้วม</td>
+                            <td>เสี่ยงมากกว่าคนปกติขั้นที่ 1</td>
+                          </tr>
+                          <tr>
+                            <td>น้ำหนักช(มากกว่า)25.0 - 29.9</td>
+                            <td>น้ำหนักมากกว่าเกณฑ์ / เริ่มอ้วน</td>
+                            <td>เสี่ยงมากกว่าคนปกติขั้นที่ 2</td>
+                              </tr>
+                           <tr>
+                                <td>น้ำหนักช(มากกว่า)30</td>
+                                <td>น้ำหนักมากกว่าเกณฑ์ / อ้วนมาก</td>
+                                <td>เสี่ยงมากกว่าคนปกติขั้นที่ 3 อันตรายมาก</td>
+                           </tr>
+                        </tbody>
+                      </table>
+                </center>
                 </div>
                 <br>
                
@@ -114,42 +155,7 @@
                             <br><br>
                             <!-- <h2>Body Mass Index <span>(BMI)</span></h2> -->
                             <center>
-                                <table>
-                                    <thead>
-                                      <tr>
-                                        <th>ค่า BMI</th>
-                                        <th>น้ำหนัก</th>
-                                        <th>ภาวะเสี่ยงต่อโรค</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <td>น้ำหนัก(น้อยกว่า) 18.50</td>
-                                        <td>น้ำหนักต่ำกว่าเกณฑ์ / ผอม</td>
-                                        <td>มากกว่าคนปกติ</td>
-                                      </tr>
-                                      <tr>
-                                        <td>น้ำหนัก 18.6 - 22.9</td>
-                                        <td>น้ำหนักปกติ</td>
-                                        <td>ปกติ</td>
-                                      </tr>
-                                      <tr>
-                                        <td>น้ำหนักช(มากกว่า)23.0 - 24.9</td>
-                                        <td>น้ำหนักมากกว่าเกณฑ์ / เริ่มท้วม</td>
-                                        <td>เสี่ยงมากกว่าคนปกติขั้นที่ 1</td>
-                                      </tr>
-                                      <tr>
-                                        <td>น้ำหนักช(มากกว่า)25.0 - 29.9</td>
-                                        <td>น้ำหนักมากกว่าเกณฑ์ / เริ่มอ้วน</td>
-                                        <td>เสี่ยงมากกว่าคนปกติขั้นที่ 2</td>
-                                          </tr>
-                                       <tr>
-                                            <td>น้ำหนักช(มากกว่า)30</td>
-                                            <td>น้ำหนักมากกว่าเกณฑ์ / อ้วนมาก</td>
-                                            <td>เสี่ยงมากกว่าคนปกติขั้นที่ 3 อันตรายมาก</td>
-                                       </tr>
-                                    </tbody>
-                                  </table>
+                                
                                 </center>
                                 <hr>
                                 <H3>
@@ -211,6 +217,7 @@
                     var bmi ="โรคอ้วนอัตราย" ;
                 }
                 document.getElementById("output").value = bmi;
+                document.getElementById("output1").value = re;
                 
             }
         </script>
